@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_footer.css">
+    <link rel="stylesheet" href="style_media.css">
+</head>
+
+<body dir="auto">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand text-muted icon-bar" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-amazon"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M10.813 11.968c.157.083.36.074.5-.05l.005.005a90 90 0 0 1 1.623-1.405c.173-.143.143-.372.006-.563l-.125-.17c-.345-.465-.673-.906-.673-1.791v-3.3l.001-.335c.008-1.265.014-2.421-.933-3.305C10.404.274 9.06 0 8.03 0 6.017 0 3.77.75 3.296 3.24c-.047.264.143.404.316.443l2.054.22c.19-.009.33-.196.366-.387.176-.857.896-1.271 1.703-1.271.435 0 .929.16 1.188.55.264.39.26.91.257 1.376v.432q-.3.033-.621.065c-1.113.114-2.397.246-3.36.67C3.873 5.91 2.94 7.08 2.94 8.798c0 2.2 1.387 3.298 3.168 3.298 1.506 0 2.328-.354 3.489-1.54l.167.246c.274.405.456.675 1.047 1.166ZM6.03 8.431C6.03 6.627 7.647 6.3 9.177 6.3v.57c.001.776.002 1.434-.396 2.133-.336.595-.87.961-1.465.961-.812 0-1.286-.619-1.286-1.533M.435 12.174c2.629 1.603 6.698 4.084 13.183.997.28-.116.475.078.199.431C13.538 13.96 11.312 16 7.57 16 3.832 16 .968 13.446.094 12.386c-.24-.275.036-.4.199-.299z" />
+                    <path
+                        d="M13.828 11.943c.567-.07 1.468-.027 1.645.204.135.176-.004.966-.233 1.533-.23.563-.572.961-.762 1.115s-.333.094-.23-.137c.105-.23.684-1.663.455-1.963-.213-.278-1.177-.177-1.625-.13l-.09.009q-.142.013-.233.024c-.193.021-.245.027-.274-.032-.074-.209.779-.556 1.347-.623" />
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link home" aria-current="page" href="#" style="color: #d56363;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="Shopp" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor"
+                    class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- offcanvas -->
+    <section class="orders">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-3" id="offcanvasExampleLabel">Orders</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="text-center">
+                    <img src="image/labtops/1.webp" alt="" srcset="">
+                    <h5>HP 250 G10 Laptop</h5>
+                    <span>23908.56 <span class="text-success"
+                            style="font-weight: bolder; vertical-align: text-bottom;">EGP</span></span>
+                    <hr>
+                </div>
+                <div class="text-center">
+                    <img src="image/labtops/2.webp" alt="" srcset="">
+                    <h5>Acer Aspire 3 A315 laptop</h5>
+                    <span>19673.33 <span class="text-success"
+                            style="font-weight: bolder; vertical-align: text-bottom;">EGP</span></span>
+                    <hr>
+                </div>
+                <div class="text-center">
+                    <img src="image/labtops/3.webp" alt="" srcset="">
+                    <h5>HP 15 laptop</h5>
+                    <span>15711.34 <span class="text-success"
+                            style="font-weight: bolder; vertical-align: text-bottom;">EGP</span></span>
+                    <hr>
+                </div>
+                <div class="text-center">
+                    <img src="image/labtops/4.webp" alt="" srcset="">
+                    <h5>Laptop Lenovo IdeaPad 5</h5>
+                    <span>30876.20 <span class="text-success"
+                            style="font-weight: bolder; vertical-align: text-bottom;">EGP</span></span>
+                    <hr>
+                </div>
+                <div class="text-center">
+                    <img src="image/labtops/5.webp" alt="" srcset="">
+                    <h5>HP Victus Gaming Laptop</h5>
+                    <span>47817.12 <span class="text-success"
+                            style="font-weight: bolder; vertical-align: text-bottom;">EGP</span></span>
+                    <hr>
+                </div>
+                <div class="text-center">
+                    <h4>Total
+                        <span>137986.55 </span><span class="text-success"
+                            style="font-weight: bolder; vertical-align: text-bottom;">EGP</span>
+                    </h4>
+
+                    <button class="btn btn-dark mt-1">Complete purchase</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="animation">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="active"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="image/1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>First slide label</h1>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="image/2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Second slide label</h1>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Third slide label</h1>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-dark" width="36" height="36" fill="currentColor"
+                    class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                </svg>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-dark" width="36" height="36" fill="currentColor"
+                    class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                </svg>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Products -->
+    <section class="text-center" style="margin-top: 100px; margin-bottom: 100px;">
+        <h3 class="border-3 border-bottom border-info  d-inline">Products</h3>
+        <div class="d-flex justify-content-center gap-2 my-4 button-group filter-button-group">
+            <button type="button" class="btn btn-primary" data-filter="*">All</button>
+            <button type="button" class="btn btn-primary" data-filter=".latest">latest</button>
+            <button type="button" class="btn btn-primary" data-filter=".Offers">Offers</button>
+        </div>
+        <div class="container">
+            <div class="row gap-3  justify-content-center zgrid">
+                <div class="card animate latest" style="width: 18rem;">
+                    <img src="image/labtops/1.webp" class="card-img-top" alt="..." data-bs-toggle="modal"
+                        data-bs-target="#1">
+                    <div class="card-body">
+                        <div class="mb-2 stars">
+                            <div class="rating">
+                                <span>☆ </span><span>☆ </span><span>☆ </span><span>☆ </span><span>☆</span>
+                            </div>
+                        </div>
+                        <h5 class="card-title">HP 250 G10 Laptop</h5>
+                        <p><span>23908.56 <span class="text-success"
+                                    style="font-weight: bolder; vertical-align: text-bottom;">EGP</span></span></p>
+                        <a href="#" class="btn btn-outline-success">buy</a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog d-flex h-75 align-items-center">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">details</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row border-bottom align-items-center">
+                                        <div class="col">
+                                            <div id="carouselExample1" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="image/labtops/1.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/2.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/3.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample1" data-bs-slide="prev">
+                                                    <i class="bi bi-arrow-left-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample1" data-bs-slide="next">
+                                                    <i class="bi bi-arrow-right-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h4 class="text-danger">HP 250 G10 Laptop</h2>
+                                                <p>HP ProBook 450 G8 Laptop - Intel Core i7-1165G7 -15.6 Inch - 512GB
+                                                    SSD - 8GB RAM - Intel Iris X Graphics - Windows 10 - Silver</p>
+                                                <a href="#" class="btn btn-dark">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card latest animate" style="width: 18rem;">
+                    <img src="image/labtops/1.webp" class="card-img-top" alt="..." data-bs-toggle="modal"
+                        data-bs-target="#2">
+                    <div class="card-body">
+                        <div class="mb-2 stars">
+                            <div class="rating">
+                                <span>☆ </span><span>☆ </span><span>☆ </span><span>☆ </span><span>☆</span>
+                            </div>
+                        </div>
+                        <h5 class="card-title">HP 250 G10 Laptop</h5>
+                        <p><span>23908.56 <span class="text-success"
+                                    style="font-weight: bolder; vertical-align: text-bottom;">EGP</span></span></p>
+                        <a href="#" class="btn btn-outline-success">buy</a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog d-flex h-75 align-items-center">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">details</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row border-bottom align-items-center">
+                                        <div class="col">
+                                            <div id="carouselExample2" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="image/labtops/1.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/2.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/3.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample2" data-bs-slide="prev">
+                                                    <i class="bi bi-arrow-left-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample2" data-bs-slide="next">
+                                                    <i class="bi bi-arrow-right-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h4 class="text-danger">HP 250 G10 Laptop</h2>
+                                                <p>HP ProBook 450 G8 Laptop - Intel Core i7-1165G7 -15.6 Inch - 512GB
+                                                    SSD - 8GB RAM - Intel Iris X Graphics - Windows 10 - Silver</p>
+                                                <a href="#" class="btn btn-dark">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card latest animate" style="width: 18rem;">
+                    <img src="image/labtops/1.webp" class="card-img-top" alt="..." data-bs-toggle="modal"
+                        data-bs-target="#3">
+                    <div class="card-body">
+                        <div class="mb-2 stars">
+                            <div class="rating">
+                                <span>☆ </span><span>☆ </span><span>☆ </span><span>☆ </span><span>☆ </span>
+                            </div>
+                        </div>
+                        <h5 class="card-title">HP 250 G10 Laptop</h5>
+                        <p><span>23908.56 <span class="text-success"
+                                    style="font-weight: bolder; vertical-align: text-bottom;">EGP</span></span></p>
+                        <a href="#" class="btn btn-outline-success">buy</a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog d-flex h-75 align-items-center">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">details</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row border-bottom align-items-center">
+                                        <div class="col">
+                                            <div id="carouselExample3" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="image/labtops/1.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/2.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/3.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample3" data-bs-slide="prev">
+                                                    <i class="bi bi-arrow-left-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample3" data-bs-slide="next">
+                                                    <i class="bi bi-arrow-right-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h4 class="text-danger">HP 250 G10 Laptop</h2>
+                                                <p>HP ProBook 450 G8 Laptop - Intel Core i7-1165G7 -15.6 Inch - 512GB
+                                                    SSD - 8GB RAM - Intel Iris X Graphics - Windows 10 - Silver</p>
+                                                <a href="#" class="btn btn-dark">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card animate" style="width: 18rem;">
+                    <img src="image/labtops/1.webp" class="card-img-top" alt="..." data-bs-toggle="modal"
+                        data-bs-target="#4">
+                    <div class="card-body">
+                        <div class="mb-2 stars">
+                            <div class="rating">
+                                <span>☆ </span><span>☆ </span><span>☆ </span><span>☆ </span><span>☆ </span>
+                            </div>
+                        </div>
+                        <h5 class="card-title">HP 250 G10 Laptop</h5>
+                        <p><span>23908.56 <span class="text-success"
+                                    style="font-weight: bolder; vertical-align: text-bottom;">EGP</span></span></p>
+                        <a href="#" class="btn btn-outline-success">buy</a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog d-flex h-75 align-items-center">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">details</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row border-bottom align-items-center">
+                                        <div class="col">
+                                            <div id="carouselExample4" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="image/labtops/1.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/2.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/3.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample4" data-bs-slide="prev">
+                                                    <i class="bi bi-arrow-left-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample4" data-bs-slide="next">
+                                                    <i class="bi bi-arrow-right-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h4 class="text-danger">HP 250 G10 Laptop</h2>
+                                                <p>HP ProBook 450 G8 Laptop - Intel Core i7-1165G7 -15.6 Inch - 512GB
+                                                    SSD - 8GB RAM - Intel Iris X Graphics - Windows 10 - Silver</p>
+                                                <a href="#" class="btn btn-dark">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card Offers animate" style="width: 18rem;">
+                    <img src="image/labtops/1.webp" class="card-img-top" alt="..." data-bs-toggle="modal"
+                        data-bs-target="#5">
+                    <div class="card-body">
+                        <div class="mb-2 stars">
+                            <div class="rating">
+                                <span>☆ </span><span>☆ </span><span>☆ </span><span>☆ </span><span>☆ </span>
+                            </div>
+                        </div>
+                        <h5 class="card-title">HP 250 G10 Laptop</h5>
+                        <p><span>23908.56 <span class="text-success"
+                                    style="font-weight: bolder; vertical-align: text-bottom;">EGP</span></span></p>
+                        <a href="#" class="btn btn-outline-success">buy</a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog d-flex h-75 align-items-center">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">details</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row border-bottom align-items-center">
+                                        <div class="col">
+                                            <div id="carouselExample5" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="image/labtops/1.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/2.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/3.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample5" data-bs-slide="prev">
+                                                    <i class="bi bi-arrow-left-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample5" data-bs-slide="next">
+                                                    <i class="bi bi-arrow-right-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h4 class="text-danger">HP 250 G10 Laptop</h2>
+                                                <p>HP ProBook 450 G8 Laptop - Intel Core i7-1165G7 -15.6 Inch - 512GB
+                                                    SSD - 8GB RAM - Intel Iris X Graphics - Windows 10 - Silver</p>
+                                                <a href="#" class="btn btn-dark">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card Offers animate" style="width: 18rem;">
+                    <img src="image/labtops/1.webp" class="card-img-top" alt="..." data-bs-toggle="modal"
+                        data-bs-target="#6">
+                    <div class="card-body">
+                        <div class="mb-2 stars">
+                            <div class="rating">
+                                <span>☆ </span><span>☆ </span><span>☆ </span><span>☆ </span><span>☆ </span>
+                            </div>
+                        </div>
+                        <h5 class="card-title">HP 250 G10 Laptop</h5>
+                        <p><span>23908.56 <span class="text-success"
+                                    style="font-weight: bolder; vertical-align: text-bottom;">EGP</span></span></p>
+                        <a href="#" class="btn btn-outline-success">buy</a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog d-flex h-75 align-items-center">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">details</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row border-bottom align-items-center">
+                                        <div class="col">
+                                            <div id="carouselExample6" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="image/labtops/1.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/2.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/3.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample6" data-bs-slide="prev">
+                                                    <i class="bi bi-arrow-left-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample6" data-bs-slide="next">
+                                                    <i class="bi bi-arrow-right-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h4 class="text-danger">HP 250 G10 Laptop</h2>
+                                                <p>HP ProBook 450 G8 Laptop - Intel Core i7-1165G7 -15.6 Inch - 512GB
+                                                    SSD - 8GB RAM - Intel Iris X Graphics - Windows 10 - Silver</p>
+                                                <a href="#" class="btn btn-dark">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card animate" style="width: 18rem;">
+                    <img src="image/labtops/1.webp" class="card-img-top" alt="..." data-bs-toggle="modal"
+                        data-bs-target="#7">
+                    <div class="card-body">
+                        <div class="mb-2 stars">
+                            <div class="rating">
+                                <span>☆ </span><span>☆ </span><span>☆ </span><span>☆ </span><span>☆ </span>
+                            </div>
+                        </div>
+                        <h5 class="card-title">HP 250 G10 Laptop</h5>
+                        <p><span>23908.56 <span class="text-success"
+                                    style="font-weight: bolder; vertical-align: text-bottom;">EGP</span></span></p>
+                        <a href="#" class="btn btn-outline-success">buy</a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog d-flex h-75 align-items-center">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">details</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row border-bottom align-items-center">
+                                        <div class="col">
+                                            <div id="carouselExample7" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="image/labtops/1.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/2.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="image/labtops/3.webp" class="d-block w-100 h-25"
+                                                            alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample7" data-bs-slide="prev">
+                                                    <i class="bi bi-arrow-left-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample7" data-bs-slide="next">
+                                                    <i class="bi bi-arrow-right-circle-fill text-dark fs-4"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h4 class="text-danger">HP 250 G10 Laptop</h2>
+                                                <p>HP ProBook 450 G8 Laptop - Intel Core i7-1165G7 -15.6 Inch - 512GB
+                                                    SSD - 8GB RAM - Intel Iris X Graphics - Windows 10 - Silver</p>
+                                                <a href="#" class="btn btn-dark">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="border container rounded  p-5 text-secondary animation" style="margin-top: 100px; margin-bottom: 100px;">
+        <h2 class="text-danger border-bottom p-1 d-inline-block mb-3">Private message</h2>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" value="ZOCKCHIN" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" value="ZOCKCHIN" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">State</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-dark" type="submit">Submit form</button>
+            </div>
+        </form>
+
+
+    </section>
+
+
+    <section class="text-center container my-5 overflow-y-auto animation" style="height: 100vh;">
+        <h3 class="border-3 border-bottom  d-inline-block text-primary-emphasis">Most requested products</h3>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg">
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/1.webp" alt="">
+                    <div>
+                        <p class="m-0">HP 250 G10 Laptop</p>
+                        <p>23908.56 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/1.webp" alt="">
+                    <div>
+                        <p class="m-0">HP 250 G10 Laptop</p>
+                        <p>23908.56 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/1.webp" alt="">
+                    <div>
+                        <p class="m-0">HP 250 G10 Laptop</p>
+                        <p>23908.56 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/1.webp" alt="">
+                    <div>
+                        <p class="m-0">HP 250 G10 Laptop</p>
+                        <p>23908.56 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg">
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/2.webp" alt="">
+                    <div>
+                        <p class="m-0">Acer Aspire 3 A315</p>
+                        <p>19673.33 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/2.webp" alt="">
+                    <div>
+                        <p class="m-0">Acer Aspire 3 A315</p>
+                        <p>19673.33 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/2.webp" alt="">
+                    <div>
+                        <p class="m-0">Acer Aspire 3 A315</p>
+                        <p>19673.33 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/2.webp" alt="">
+                    <div>
+                        <p class="m-0">Acer Aspire 3 A315</p>
+                        <p>19673.33 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg">
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/3.webp" alt="">
+                    <div>
+                        <p class="m-0">HP 15 laptop</p>
+                        <p>15711.34 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/3.webp" alt="">
+                    <div>
+                        <p class="m-0">HP 15 laptop</p>
+                        <p>15711.34 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/3.webp" alt="">
+                    <div>
+                        <p class="m-0">HP 15 laptop</p>
+                        <p>15711.34 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg">
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/4.webp" alt="">
+                    <div>
+                        <p class="m-0 text-nowrap">Laptop Lenovo IdeaPad 5</p>
+                        <p>30876.20 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/4.webp" alt="">
+                    <div>
+                        <p class="m-0 text-nowrap">Laptop Lenovo IdeaPad 5</p>
+                        <p>30876.20 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/4.webp" alt="">
+                    <div>
+                        <p class="m-0 text-nowrap">Laptop Lenovo IdeaPad 5</p>
+                        <p>30876.20 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="w-50" src="image/labtops/4.webp" alt="">
+                    <div>
+                        <p class="m-0 text-nowrap">Laptop Lenovo IdeaPad 5</p>
+                        <p>30876.20 <span class="text-success">EGp</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="border rounded container p-5 animation">
+        <div class="text-center">
+            <button class="btn btn-dark" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
+                Shopping cart
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary" width="16" height="16"
+                    fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>
+            </button>
+
+            <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">policy Recovery</button>
+        </div>
+
+
+        <div class="collapse mt-3" id="collapseExample">
+            <div class="card card-body">
+                <div class="text-center">
+                    <h5 class="text-danger border-bottom d-inline-block">policy recovery</h5>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-danger-subtle" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                policy recovery 1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Consequatur ullam nihil nostrum hic vero ab perspiciatis reprehenderit facilis sequi
+                                commodi, ad illo blanditiis modi adipisci iure enim fugiat quod fuga!</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-info-subtle" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                policy recovery 2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus tempore, vitae voluptates dolorem cupiditate nam quos, consectetur facere
+                                inventore repudiandae modi molestiae reprehenderit sunt voluptas dolores error
+                                doloremque iure voluptatem?</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-warning-subtle" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                policy recovery 3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Cupiditate consectetur sapiente amet velit ratione culpa quidem quis necessitatibus
+                                perferendis quaerat! Labore praesentium ea ipsam assumenda pariatur quod optio
+                                reiciendis quos?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5 container p-5 border rounded">
+        <div class="text-center mb-5">
+            <h2 class=" border-3 border-bottom d-inline-block text-info">Services</h2>
+        </div>
+
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-sm-12 text-center">
+                <iframe src="https://lottie.host/embed/38e2983a-71a4-413c-a56d-97689648c487/ylL9igVtoA.lottie"
+                    width="100%" height="400"></iframe>
+            </div>
+            <div class="col-lg-6 col-sm-12 text-dark-emphasis">
+                <h3 class="text-success-emphasis">Services #1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus necessitatibus cum sapiente
+                    dicta nam ducimus, quam dolores, omnis eveniet iste, dolor odio nobis totam! Quaerat at quo
+                    voluptatibus. Magnam, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center flex-row-reverse">
+            <div class="col-lg-6 col-sm-12 text-center">
+                <iframe src="https://lottie.host/embed/9727dec3-52d3-4fd8-b5bd-6c7b3023cf69/4mQc5sx4rg.lottie"
+                    width="100%" height="300"></iframe>
+            </div>
+            <div class="col-lg-6 col-sm-12 text-dark-emphasis">
+                <h3 class="text-success-emphasis">Services #2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos similique architecto soluta quae
+                    dolorum harum deserunt voluptate aspernatur nam quibusdam voluptates est alias blanditiis numquam,
+                    saepe itaque nesciunt maiores. Sed.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-sm-12 text-center">
+                <iframe src="https://lottie.host/embed/dc25ae24-babb-45f9-a484-5d85338400fe/1wQVIZYU58.lottie"
+                    width="100%" height="300"></iframe>
+            </div>
+            <div class="col-lg-6 col-sm-12 text-dark-emphasis">
+                <h3 class="text-success-emphasis">Services #3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, deserunt nostrum. Beatae commodi
+                    molestiae sunt quasi aliquid, ipsum itaque dolorem rem dolores corporis quae aut eveniet quidem
+                    earum voluptatibus dicta.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 footer-section">
+                        <div class="footer-logo">ZOCKCHIN</div>
+                        <p class="footer-about">We are dedicated to providing the best service to our customers. Our
+                            mission
+                            is to create innovative solutions that make a difference in people's lives.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-section">
+                        <h5>Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-section">
+                        <h5>Support</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Contact Support</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 footer-section">
+                        <h5>Newsletter</h5>
+                        <p class="footer-about">Subscribe to our newsletter for updates, news, and exclusive offers.</p>
+                        <div class="footer-newsletter">
+                            <input type="email" placeholder="Enter your email">
+                            <button class="newsletter-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <ul class="footer-bottom-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                    <p>© 2025 ZOCKCHIN. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+<script>
+    (() => {
+        const forms = document.querySelectorAll('.needs-validation')
+
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+
+<script src="/script.js"></script>
+
+
+</html>
